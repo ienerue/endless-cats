@@ -4,7 +4,7 @@ let page = 0
 // const catNames = [coolcat, kittyprincess, meowzers, lilkitty, pumpkin, aricatto, mr_meowtastic, meowman, kittykat]
 
 async function getCats() {
-    const response = await fetch("https://api.thecatapi.com/v1/images/search?limit=10")
+    const response = await fetch(`https://api.thecatapi.com/v1/images/search?limit=${limit}&page=${page}`)
     const cats = await response.json()
     cats.forEach(cat => {
         catContainer.innerHTML += `<img class="cat-img" src=${cat.url}>`
