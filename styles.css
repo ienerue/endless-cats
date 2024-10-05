@@ -36,7 +36,8 @@ h1 {
 
 .cat-img {
     width: 600px;
-    border-radius: 10px;
+    border: 6px solid white;
+    border-radius: 6px;
 }
 
 @media (max-width: 650px) {
